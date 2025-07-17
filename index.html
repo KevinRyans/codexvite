@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Utviklerportefølje</title>
+  </head>
+  <body class="bg-black text-white font-sans overflow-x-hidden">
+    <div id="loader" class="fixed inset-0 flex items-center justify-center bg-black z-50 transition-opacity duration-500">
+      <svg class="h-16 w-16 text-purple-500 animate-spin" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" class="opacity-25" />
+        <path d="M4 12a8 8 0 018-8" stroke="currentColor" stroke-width="4" class="opacity-75" />
+      </svg>
+    </div>
+    <div id="main" class="hidden opacity-0 translate-x-full transition-all duration-500 ease-snappy" style="will-change: transform, opacity;"></div>
+    <script type="module" src="/src/loader.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
