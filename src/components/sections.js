@@ -1,7 +1,8 @@
 export function createProjects() {
   const section = document.createElement('section');
   section.id = 'projects';
-  section.className = 'py-16 px-4';
+  section.className = 'py-16 px-4 opacity-0 translate-y-8 transition-all duration-500';
+  section.style.willChange = 'transform, opacity';
   const h2 = document.createElement('h2');
   h2.className = 'text-3xl mb-4 font-semibold';
   h2.textContent = 'Prosjekter';
@@ -14,7 +15,8 @@ export function createProjects() {
 export function createAbout() {
   const section = document.createElement('section');
   section.id = 'about';
-  section.className = 'py-16 px-4';
+  section.className = 'py-16 px-4 opacity-0 translate-y-8 transition-all duration-500';
+  section.style.willChange = 'transform, opacity';
   const h2 = document.createElement('h2');
   h2.className = 'text-3xl mb-4 font-semibold';
   h2.textContent = 'Om meg';
@@ -27,7 +29,8 @@ export function createAbout() {
 export function createContact() {
   const section = document.createElement('section');
   section.id = 'contact';
-  section.className = 'py-16 px-4';
+  section.className = 'py-16 px-4 opacity-0 translate-y-8 transition-all duration-500';
+  section.style.willChange = 'transform, opacity';
   const h2 = document.createElement('h2');
   h2.className = 'text-3xl mb-4 font-semibold';
   h2.textContent = 'Kontakt';
